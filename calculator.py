@@ -6,6 +6,7 @@ One function per operation, in order.
 """
 import math
 
+<<<<<<< HEAD
 def square_root(a):
     try:
         return math.sqrt(a)
@@ -14,6 +15,8 @@ def square_root(a):
 
 def hypotenuse(a, b):
     return math.hypot(a, b)
+=======
+>>>>>>> 834b55ab6ac01ac57c47c00396badf2b57f39f86
 
 def add(a, b): 
     return a + b
@@ -38,3 +41,4 @@ def log(a, b):
 
 def exp(a, b):
     return a ** b
+
