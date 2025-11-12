@@ -5,22 +5,29 @@ calculator.py
 One function per operation, in order.
 """
 import math
-def add(a,b):
-    a+b
-def sub(a,b):
-    a-b
-def mul(a,b):
-    a*b
-def div(a,b):
-    try:
-        a/b
-    except ValueError:
-        print("Cannont divide by zero")
-def log(a,b):
-    try:
-        math.log(a,b)
-    except ValueError:
-        print("Can't log number less than or equal to zero")
 
-def exp(a,b):
-    a**b
+
+def add(a, b): 
+    return a + b
+
+def sub(a, b): 
+    return a - b
+
+def mul(a, b):
+    return a * b
+
+def div(a, b):
+    try:
+        return b / a
+    except ZeroDivisionError:
+        print("Cannot divide by zero!")
+
+def log(a, b):
+    try:
+        return math.log(b, a)
+    except ValueError:
+        print("Cannot take the log of a number less than or equal to zero!")
+
+def exp(a, b):
+    return a ** b
+
